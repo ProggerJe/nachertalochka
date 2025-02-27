@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Bree Serif&display=swap');
+
+
+body {
+    font-family:Bree Serif, serif;
+    background: linear-gradient(90deg, #e97d25 0%, #8368a1 100%);
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+.nav-link {
+    color: rgb(151, 238, 155);
+}
+
+.navbar-nav .nav-link.active {
+    color:rgb(156, 153, 153);
+
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(151, 238, 155);
+}
+
+.sidebar {
+    color:aquamarine;
+    background: linear-gradient(270deg, #00000000 0%, #00000000 100%);
+
+
+}
+
+.card {
+    background: linear-gradient(270deg, #60645d 0%, #363835 100%);
+    color:  rgb(151, 238, 155);
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-anim {
+    animation: call 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(-6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(-3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(-1.2deg);
+	}
+}
+
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
+
